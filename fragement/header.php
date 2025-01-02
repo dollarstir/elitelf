@@ -108,9 +108,9 @@ echo '
                                     
                                 </ul>
                             </li>
-                            <li>
+                           <!-- <li>
                                 <a href="'.nel('awards').'">Awards</a>
-                            </li>
+                            </li>-->
                             
                             
                             <li>
