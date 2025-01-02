@@ -133,10 +133,10 @@ $re = $a->getall('contact');
     </div>
     <!-- Main Contact page End here -->
     <div class="google-map-area">
-        <iframe
+        <!-- <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.425587005432!2d-0.13132828515127912!3d5.651407834253676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf836733cda7d5%3A0x266f20009cd31e7e!2s211%20E%20Legon%20-%20Trasacco%20Estate%20Rd%2C%20Accra!5e0!3m2!1sen!2sgh!4v1650386683444!5m2!1sen!2sgh"
             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            referrerpolicy="no-referrer-when-downgrade"></iframe> -->
     </div>
     <!-- Partner Logo Area Start Here -->
     <!-- <div class="client-logo-area">

@@ -10,6 +10,17 @@ function title($page)
 
 function metaTags(){
     // Add meta tags here.
+
+    $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https" : "http";
+
+// Get the host (e.g., abc.com or localhost)
+$host = $_SERVER['HTTP_HOST'];
+
+// Construct the base URL
+$baseUrl = $protocol . "://" . $host;
+
+// Output the result
+
     try{
         $a = new Sel();
         $response = $a->getall('settings');
@@ -22,49 +33,49 @@ function metaTags(){
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
 		============================================ -->
-    <link rel="shortcut icon" href="main/img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="yolkassets/upload/'.$favicon.'" type="image/png">
+    <link rel="shortcut icon" href="'.$baseUrl.'main/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="'.$baseUrl.'/yolkassets/upload/'.$favicon.'" type="image/png">
 
     <!-- Bootstrap CSS
 		============================================ -->
-    <link rel="stylesheet" href="main/css/bootstrap.min.css">
+    <link rel="stylesheet" href="'.$baseUrl.'/main/css/bootstrap.min.css">
     <!-- Bootstrap CSS
 		============================================ -->
-    <link rel="stylesheet" href="main/css/font-awesome.min.css">
+    <link rel="stylesheet" href="'.$baseUrl.'/main/css/font-awesome.min.css">
     <!-- nivo slider CSS
         ============================================ -->
-    <link rel="stylesheet" href="main/custom-slider/css/nivo-slider.css" type="text/css" />
-    <link rel="stylesheet" href="main/custom-slider/css/preview.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="'.$baseUrl.'/main/custom-slider/css/nivo-slider.css" type="text/css" />
+    <link rel="stylesheet" href="'.$baseUrl.'/main/custom-slider/css/preview.css" type="text/css" media="screen" />
     <!-- owl.carousel CSS
 		============================================ -->
-    <link rel="stylesheet" href="main/css/owl.carousel.css">
-    <link rel="stylesheet" href="main/css/owl.theme.css">
-    <link rel="stylesheet" href="main/css/owl.transitions.css">
+    <link rel="stylesheet" href="'.$baseUrl.'/main/css/owl.carousel.css">
+    <link rel="stylesheet" href="'.$baseUrl.'/main/css/owl.theme.css">
+    <link rel="stylesheet" href="'.$baseUrl.'/main/css/owl.transitions.css">
     <!-- jquery-ui CSS
 		============================================ -->
-    <link rel="stylesheet" href="main/css/jquery-ui.css">
+    <link rel="stylesheet" href="'.$baseUrl.'/main/css/jquery-ui.css">
     <!-- meanmenu CSS
 		============================================ -->
-    <link rel="stylesheet" href="main/css/meanmenu.min.css">
+    <link rel="stylesheet" href="'.$baseUrl.'/main/css/meanmenu.min.css">
     <!-- animate CSS
 		============================================ -->
-    <link rel="stylesheet" href="main/css/animate.css">
+    <link rel="stylesheet" href="'.$baseUrl.'/main/css/animate.css">
     <!-- normalize CSS
 		============================================ -->
-    <link rel="stylesheet" href="main/css/normalize.css">
+    <link rel="stylesheet" href="'.$baseUrl.'/main/css/normalize.css">
     <!-- main CSS
 		============================================ -->
-    <link rel="stylesheet" href="main/css/main.css">
+    <link rel="stylesheet" href="'.$baseUrl.'/main/css/main.css">
     <!-- nivo slider CSS
         ============================================ -->
-    <link rel="stylesheet" href="main/custom-slider/css/nivo-slider.css" type="text/css" />
-    <link rel="stylesheet" href="main/custom-slider/css/preview.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="'.$baseUrl.'/main/custom-slider/css/nivo-slider.css" type="text/css" />
+    <link rel="stylesheet" href="'.$baseUrl.'/main/custom-slider/css/preview.css" type="text/css" media="screen" />
     <!-- style CSS
 		============================================ -->
-    <link rel="stylesheet" href="main/style.css">
+    <link rel="stylesheet" href="'.$baseUrl.'/main/style.css">
     <!-- Responsive CSS
         ============================================ -->
-    <link rel="stylesheet" href="main/css/responsive.css">
+    <link rel="stylesheet" href="'.$baseUrl.'/main/css/responsive.css">
 
 
      <!-- Open Graph Meta Tags -->
@@ -82,7 +93,7 @@ function metaTags(){
     <meta name="twitter:image" content="https://eliteethicslegal.online/yolkassets/upload/'.$logo.'">
     <!-- modernizr JS
 		============================================ -->
-    <script src="main/js/vendor/modernizr-2.8.3.min.js"></script>';
+    <script src="'.$baseUrl.'/main/js/vendor/modernizr-2.8.3.min.js"></script>';
            
         }
     }
