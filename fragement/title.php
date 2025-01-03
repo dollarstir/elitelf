@@ -81,7 +81,7 @@ $baseUrl = $protocol . "://" . $host;
      <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="'.$title.' - Trusted Legal Services">
     <meta property="og:description" content="Providing premier legal services with professionalism, trust, and ethics. Visit us at 31 Albert Road, London, United Kingdom.">
-    <meta property="og:image" content="https://eliteethicslegal.online'.$baseUrl.'/yolkassets/upload/'.$logo.'">
+    <meta property="og:image" content="'.$baseUrl.'/yolkassets/upload/'.$logo.'">
     <meta property="og:url" content="'.$baseUrl.'">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="'.$title.'">
